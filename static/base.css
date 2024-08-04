@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #02001e;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/* Navigation styling */
+#nav {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space between name and nav items */
+    height: 68px;
+    padding: 20px;
+    position: relative;
+}
+
+#name {
+    font-size: 20px;
+    font-family: "Righteous";
+    color: white;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter, sans-serif";
+    flex-grow: 1; /* Allow nav items to grow and take available space */
+}
+
+#nav-items a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px; /* Space between links */
+    /* border-bottom: 1px solid #64ffda; */
+}
+
+#name:hover {
+    color: #64ffda;
+}
+
+#nav-items a:hover {
+    color: #64ffda;
+    border-radius: 5px; /* Optional: add border radius for rounded corners */
+    border-bottom: 3px solid #64ffda;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        right: 20px;
+        background: rgba(10, 25, 47, 0.85);
+        padding: 10px;
+        border-radius: 5px;
+        width: 200px;
+        z-index: 1000;
+    }
+
+    #nav-items.show {
+        display: flex;
+    }
+
+    #nav-items a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggle-button {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5em;
+        color: white;
+        padding: 5px;
+    }
+
+    .toggle-button:after {
+        content: '\f0c9'; /* FontAwesome menu icon */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+    }
+}

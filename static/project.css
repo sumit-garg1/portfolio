@@ -1,0 +1,153 @@
+#project {
+    color: #dee2e6;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    #project {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    #project-sec {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .line {
+        width: 100px;
+        margin-left: 0;
+        margin: 10px auto;
+    }
+
+    .projects-section {
+        padding: 20px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .proj-img, .proj-img2 {
+        max-width: 100%;
+    }
+
+    #proj-content {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #proj-content h4 {
+        font-size: 20px;
+    }
+
+    #proj-content ul {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+#project-sec {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: #dee2e6;
+    margin-left: 10px;
+}
+
+.projects-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #101020;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    background: #202040;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.project-alternate {
+    flex-direction: row-reverse;
+}
+
+.proj-img, .proj-img2 {
+    flex: 1;
+    max-width: 300px;
+}
+
+.proj-img img, .proj-img2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#proj-content {
+    flex: 2;
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+}
+
+.project-alternate #proj-content {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+#proj-content h4, #proj-content h5 {
+    margin: 0;
+    padding: 0;
+}
+
+#proj-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#proj-content ul {
+    margin-left: 12px;
+    padding: 0;
+    font-size: 16px;
+}
+
+#proj-content ul li {
+    margin-bottom: 5px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3b3b;
+}

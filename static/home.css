@@ -1,0 +1,115 @@
+#image, img {
+  background-color: transparent;  
+  height: 240px;
+  width: 240px;
+  margin-top: 4px;
+  margin-left: 280px;
+  border-radius: 50%;    
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #image, img {
+      height: 150px;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+  #intro, #intro2 {
+      margin-left: 0;
+      text-align: center;
+  }
+  #intro {
+      font-size: 30px;
+  }
+  #intro2 {
+      font-size: 50px;
+  }
+  .container {
+      margin-left: 0;
+      text-align: center;
+  }
+  .container .text {
+      font-size: 20px;
+  }
+  .container .text.first-text {
+      margin-right: 0;
+  }
+  .social {
+      font-size: 40px;
+  }
+}
+
+/* Other existing styles */
+#intro {
+  color: #64ffda;
+  font-weight: bold;
+  font-family: "Righteous";
+  margin-left: 41%;
+  margin-top: 10px;
+  font-size: 40px;
+}
+#intro2 {
+  color: white;
+  font-weight: bold;
+  font-family: "Playfair Display";
+  /* font-family: Righteous; */
+  margin-left: 37%;
+  /* margin-top: 5px; */
+  font-size: 70px;
+}
+.container {
+  color: white;
+  margin-left: 38rem;
+}
+.container .text {
+  position: relative;
+  color: #16ff00;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Righteous";
+}
+.container .text.first-text {
+  color: white;
+  margin-right: 3px;
+}
+.text.second-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #02001e;
+  border-left: 2px solid #16ff00;
+  animation: animate 3s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+      left: calc(100% + 4px);
+  }
+  100% {
+      left: 0;
+  }
+}
+#social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.social {
+  font-size: 60px;
+  margin-left: 10px;
+  color: white;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

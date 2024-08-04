@@ -1,0 +1,124 @@
+#about {
+    color: #dee2e6;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    #about {
+        margin-left: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #about-sec {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .line {
+        width: 100px;
+        height: 2px;
+        margin: 10px 0;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #image-sec img {
+        height: 200px;
+        width: 100%;
+        max-width: 300px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #text-sec {
+        font-size: 16px;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #cv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-btn {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
+
+/* Other existing styles */
+#about-sec {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: #dee2e6;
+    margin-left: 10px;
+}
+
+#content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+#image-sec img {
+    height: 280px;
+    width: 320px;
+    margin-right: 20px;
+}
+
+#text-sec, h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#text-sec {
+    color: white;
+    font-size: 19.4px;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-align: justify;
+    width: 700px;
+}
+
+#cv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    font-family: "Righteous";
+}
+
+.download-btn {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #001aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #13e70c;
+}

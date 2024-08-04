@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block head %}
+{% load static %}
+<head>
+    <link rel="stylesheet" href={% static "home.css" %}>
+    
+</head>
+{% endblock head %}
+{% block content %}
+        <div id="particles-js"></div>
+        <section>
+            <div id="mysection">
+
+                <div id="image" data-aos="zoom-in"data-aos-delay="300"><img src="static/images/myimage.jpg" alt=""></div>
+                <div id="intro" data-aos="zoom-in-down"data-aos-delay="400">
+                    Hi, my name is
+                </div>
+                <div id="intro2"data-aos="zoom-out"data-aos-delay="600">
+                    Sumit Garg
+                </div>
+                <div class="container"data-aos="zoom-out-down"data-aos-delay="800">
+                    <span class="text first-text">I'm</span>
+                    <span class="text second-text">Developer</span>
+                </div>
+            </div>
+        </section>
+        <section id="social-section">
+            <div class="social">
+            <a href="https://github.com/sumit-garg1"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.instagram.com/sumit__garg70/"><i class="fa-brands fa-square-instagram" style="color: #e665b7;"></i></a>
+            <a href="https://www.linkedin.com/in/sumit-garg-580525255/"><i class="fa-brands fa-linkedin" style="color: #469bdd;"></i></a>
+            <a href="https://x.com/sumit14989661"><i class="fa-brands fa-square-x-twitter" style="color: #3a4764;"></i></a>
+        </div>
+        </section>
+     <!-- Particle.js container -->
+    <!-- script for background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#00FFFF' },
+                shape: {
+                    type: 'circle',
+                    stroke: { width: 0, color: '#000000' },
+                    polygon: { nb_sides: 5 },
+                    image: { src: '', width: 100, height: 100 }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00FFFF',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 20,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 400, line_linked: { opacity: 1 } },
+                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                    repulse: { distance: 200, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 }
+                }
+            },
+            retina_detect: true
+        });
+
+        const text= document.querySelector(".second-text");
+        const textLoad=()=>{
+            setTimeout(()=>{
+                text.textContent=" web Developer";
+            },0);
+            setTimeout(()=>{
+                text.textContent="Coder";
+            },3000);
+        }
+        textLoad();
+        setInterval(textLoad, 6000);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+{% endblock content %} 
+
