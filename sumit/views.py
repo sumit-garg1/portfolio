@@ -9,3 +9,5 @@ def skills(request):
     return render(request,'skills.html')
 def projects(request):
     return render(request,'projects.html')
+def contact(request):
+    return render(request,'contact.html')
