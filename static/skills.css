@@ -1,46 +1,9 @@
+/* Default styles for larger screens */
 #skill {
   color: #dee2e6;
   line-height: 1.2;
   margin-top: 10px;
   margin-left: 130px;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  #skill {
-      margin-left: 0;
-      text-align: center;
-  }
-  
-  #skills {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .line {
-      width: 100px;
-      margin-left: 0;
-      margin: 10px auto;
-  }
-
-  .grid-container {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      grid-template-rows: auto;
-      margin-top: 20px;
-  }
-
-  .grid-item {
-      font-size: 20px;
-      padding: 10px;
-  }
-
-  i {
-      font-size: 50px;
-  }
-
-  #skills-name {
-      font-size: 20px;
-  }
 }
 
 #skills {
@@ -91,4 +54,42 @@ i {
   cursor: pointer;
   box-shadow: rgba(5, 5, 146, 0.726) 0px 13px 27px -5px, rgba(228, 49, 49, 0.856) 0px 8px 16px -8px;
   transition-delay: 2s;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #skill {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  #skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    width: 100px;
+    margin-left: 0;
+    margin: 10px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for mobile */
+    grid-template-rows: auto;
+    margin-top: 20px;
+  }
+
+  .grid-item {
+    font-size: 20px; /* Adjust font size for mobile */
+    padding: 10px;
+  }
+
+  i {
+    font-size: 50px; /* Adjust icon size for mobile */
+  }
+
+  #skills-name {
+    font-size: 20px; /* Adjust skills name font size for mobile */
+  }
 }

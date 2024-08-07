@@ -5,59 +5,6 @@
     margin-left: 130px;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    #project {
-        margin-left: 0;
-        text-align: center;
-    }
-    
-    #project-sec {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .line {
-        width: 100px;
-        margin-left: 0;
-        margin: 10px auto;
-    }
-
-    .projects-section {
-        padding: 20px;
-    }
-
-    .project {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-        padding: 10px;
-    }
-
-    .proj-img, .proj-img2 {
-        max-width: 100%;
-    }
-
-    #proj-content {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    #proj-content h4 {
-        font-size: 20px;
-    }
-
-    #proj-content ul {
-        font-size: 14px;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
-
 #project-sec {
     display: flex;
     align-items: center;
@@ -72,82 +19,101 @@
 }
 
 .projects-section {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
-    background-color: #101020;
-}
-
-.project {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    background: #202040;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-    flex-direction: row;
-}
-
-.project-alternate {
-    flex-direction: row-reverse;
-}
-
-.proj-img, .proj-img2 {
-    flex: 1;
-    max-width: 300px;
-}
-
-.proj-img img, .proj-img2 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-#proj-content {
-    flex: 2;
-    text-align: left;
-    margin-left: 20px;
     color: white;
 }
 
-.project-alternate #proj-content {
-    margin-left: 0;
-    margin-right: 20px;
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-#proj-content h4, #proj-content h5 {
-    margin: 0;
-    padding: 0;
+.project-item {
+    flex: 0 1 calc(33.333% - 40px); /* Adjust for three items per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-#proj-content h4 {
+.proj-name {
+    color: white;
+    font-family: "Righteous";
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#proj-content ul {
-    margin-left: 12px;
-    padding: 0;
-    font-size: 16px;
-}
-
-#proj-content ul li {
-    margin-bottom: 5px;
-}
-
-button {
-    display: inline-block;
-    margin: 10px 5px 0 0;
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    color: #fff;
-    text-decoration: none;
+.proj-img {
+    height: 200px;
+    width: 100%;
     border-radius: 5px;
-    transition: background-color 0.3s;
-    border: none;
-    cursor: pointer;
+    overflow: hidden; /* Ensures the image stays within the bounds */
 }
 
-button:hover {
-    background-color: #ff3b3b;
+.proj-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.proj-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.proj-buttons a {
+    text-decoration: none;
+}
+
+.proj-buttons button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.proj-buttons .btn-source button {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 123, 255, 0.5);
+    width: 150px; /* Fixed width for source code button */
+}
+
+.proj-buttons .btn-live button {
+    background: linear-gradient(145deg, #28a745, #218838);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(40, 167, 69, 0.5);
+    width: 160px; /* Fixed width for live button */
+}
+
+.proj-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    #project {
+        margin-left: 10px; /* Adjust margin for mobile if needed */
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap if needed */
+    }
+
+    .project-item {
+        flex: 1 1 100%; /* Ensure each item takes full width on mobile */
+        max-width: 100%; /* Prevents items from overflowing */
+    }
 }

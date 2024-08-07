@@ -3,41 +3,51 @@
   height: 240px;
   width: 240px;
   margin-top: 4px;
-  margin-left: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   border-radius: 50%;    
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
   #image, img {
-      height: 150px;
-      width: 150px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
+    margin-top: 4rem;
+    height: 200px;
+    width: 200px;
   }
   #intro, #intro2 {
-      margin-left: 0;
-      text-align: center;
+    margin-left: 0;
+    text-align: center; /* Increased top margin for mobile */
   }
   #intro {
-      font-size: 30px;
+    font-size: 30px;
+    margin-top: 1rem;
+    /* margin-bottom: 15px; Increased bottom margin for mobile */
   }
   #intro2 {
-      font-size: 50px;
+    font-size: 50px;
+    /* margin-bottom: 20px; Increased bottom margin for mobile */
   }
   .container {
-      margin-left: 0;
-      text-align: center;
+    margin-left: 0;
+    text-align: center; /* Adjust padding for mobile */
   }
   .container .text {
-      font-size: 20px;
+    /* margin-top: 1rem; */
+    /* width: 50px; */
+    font-size: 20px;
+    /* margin-bottom: 15px; Increased bottom margin for mobile */
   }
   .container .text.first-text {
-      margin-right: 0;
+    /* width: 20px; */
+    /* padding-right: 2rem; */
+    margin-top: 3rem;
+    margin-right: 0;
   }
   .social {
-      font-size: 40px;
+    margin-top: 1.5rem;
+    font-size: 40px;
   }
 }
 
@@ -46,22 +56,22 @@
   color: #64ffda;
   font-weight: bold;
   font-family: "Righteous";
-  margin-left: 41%;
-  margin-top: 10px;
+  text-align: center;
   font-size: 40px;
+  margin: 10px auto;
 }
 #intro2 {
   color: white;
   font-weight: bold;
   font-family: "Playfair Display";
-  /* font-family: Righteous; */
-  margin-left: 37%;
-  /* margin-top: 5px; */
+  text-align: center;
   font-size: 70px;
+  margin: 5px auto;
 }
 .container {
   color: white;
-  margin-left: 38rem;
+  text-align: center;
+  padding: 0 15px; /* Padding for larger screens */
 }
 .container .text {
   position: relative;
@@ -69,10 +79,15 @@
   font-size: 30px;
   font-weight: 600;
   font-family: "Righteous";
+  display: inline-block;
 }
 .container .text.first-text {
   color: white;
   margin-right: 3px;
+}
+.text.second-text {
+  display: inline-block;
+  position: relative; /* Ensure it stays in place */
 }
 .text.second-text:before {
   content: "";
@@ -88,10 +103,10 @@
 
 @keyframes animate {
   40%, 60% {
-      left: calc(100% + 4px);
+    left: calc(100% - 2px); /* Adjusted to limit movement */
   }
   100% {
-      left: 0;
+    left: 0;
   }
 }
 #social-section {

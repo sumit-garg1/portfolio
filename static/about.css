@@ -1,3 +1,4 @@
+/* Desktop styles */
 #about {
     color: #dee2e6;
     font-size: 15px;
@@ -6,59 +7,6 @@
     margin-left: 130px;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    #about {
-        margin-left: 0;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    #about-sec {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .line {
-        width: 100px;
-        height: 2px;
-        margin: 10px 0;
-    }
-
-    #content {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    #image-sec img {
-        height: 200px;
-        width: 100%;
-        max-width: 300px;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    #text-sec {
-        font-size: 16px;
-        width: 90%;
-        margin-left: 0;
-    }
-
-    #cv {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .download-btn {
-        font-size: 20px;
-        padding: 10px 15px;
-    }
-}
-
-/* Other existing styles */
 #about-sec {
     display: flex;
     align-items: center;
@@ -121,4 +69,98 @@
 
 .download-btn:hover {
     background-color: #13e70c;
+}
+/* Mobile styles */
+/* Mobile styles */
+@media (max-width: 768px) {
+    #nav-bar {
+        padding: 10px;
+        margin: 0 auto;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    /* Ensure download button is visible and properly styled */
+    .download-btn {
+        font-size: 20px;
+        padding: 10px 15px;
+        display: inline-block; /* Ensure button is visible as a block element */
+        text-align: center;
+    }
+
+    #about {
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #about-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+
+    .line {
+        width: 100px;
+        height: 2px;
+        margin: 10px auto;
+        background-color: #dee2e6;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    #image-sec img {
+        height: auto;
+        max-width: 80%;
+        margin: 0 auto 20px auto;
+        display: block; /* Ensure margin auto centers the image */
+        padding-right: 10px; /* Adjust padding to shift image slightly right */
+        box-sizing: border-box; /* Ensure padding is included in width calculations */
+    }
+
+    #text-sec {
+        font-size: 16px;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #cv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        clear: both;
+    }
 }

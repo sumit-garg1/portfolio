@@ -2,13 +2,13 @@
 {% load static %}
 {% block head %}
 <head>
-    <link rel="stylesheet" href={% static "project.css" %}>
+    <link rel="stylesheet" href="{% static 'project.css' %}">
 </head>
 {% endblock head %}
 
 {% block content %}
 
-<div id="project">
+<div id="project"data-aos="fade-down">
     <div id="project-sec">
         <h4>PROJECTS</h4>
         <div class="line"></div>
@@ -16,114 +16,86 @@
 </div>
 
 <section class="projects-section">
-    <div id="content" class="project">
-        <div class="proj-img">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/static/images/chat1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/images/chat2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/images/chat3.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <a href=""><button>View Live</button></a><a href=""><button>source code</button></a>
+    <div class="projects-container">
+        <!-- Chat App -->
+        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="2000">
+            <div class="proj-name">
+                <h3>Chat App</h3>
+            </div>
+            <div class="proj-img">
+                <img src="{% static 'images/chat1.png' %}" class="d-block w-100" alt="Chat App">
+            </div>
+            <div class="proj-buttons">
+                <a href="https://github.com/sumit-garg1/Chat-App" class="btn-source"><button>Source Code</button></a>
             </div>
         </div>
-        <div id="proj-content">
-            <h4 style="font-family:Merienda;">Title:-</h4>
-            <h5 style="font-family: righteous;">CHAT APP</h5>
-            <br>
-            <h4 style="font-family:Merienda;">Description:-</h4>
-            <ul style="font-family: righteous;">
-                <li><b>Real-time Messaging:-</b> Instant message delivery and display using WebSockets for a smooth and responsive chat experience.</li>
-                <li><b>User Authentication:-</b> Secure user authentication and management, allowing users to register, log in, and maintain personalized chat sessions.</li>
-                <li><b>Chat Rooms:-</b> Multiple chat rooms where users can join and participate in conversations.</li>
-            </ul>
-        </div>
-    </div>
-    <div id="content" class="project project-alternate">
-        <div class="proj-img2">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/static/images/port1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/images/port2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <!-- <div class="carousel-item">
-                        <img src="/static/images/chat3.png" class="d-block w-100" alt="...">
-                    </div> -->
-                </div>
-                <a href=""><button>View Live</button></a><a href=""><button>source code</button></a>
+
+        <!-- Portfolio Website -->
+        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="2000">
+            <div class="proj-name">
+                <h3>Portfolio Website</h3>
+            </div>
+            <div class="proj-img">
+                <img src="{% static 'images/port1.png' %}" class="d-block w-100" alt="Portfolio Website">
+            </div>
+            <div class="proj-buttons">
+                <a href="" class="btn-source" style="margin-right: 20px;"><button>Source Code</button></a>
+                <a href="" class="btn-live"><button>Live</button></a>
             </div>
         </div>
-        <div id="proj-content">
-            <h4 style="font-family:Merienda;">Title:-</h4>
-            <h5 style="font-family: righteous;">Personal Portfolio Website</h5>
-            <br>
-            <h4 style="font-family:Merienda;">Description:-</h4>
-            <ul style="font-family: righteous;">
-                <li>A visually stunning and responsive personal portfolio website designed to showcase my skills, projects, and professional experience.</li>
-            </ul>
-        </div>
-    </div>
-    <div id="content" class="project">
-        <div class="proj-img">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/static/images/NEWS1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/images/NEWS2.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <a href=""><button>View Live</button></a><a href=""><button>source code</button></a>
+
+        <!-- Weather App -->
+        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="2000">
+            <div class="proj-name">
+                <h3>Weather App</h3>
+            </div>
+            <div class="proj-img">
+                <img src="{% static 'images/weather1.png' %}" class="d-block w-100" alt="Weather App">
+            </div>
+            <div class="proj-buttons">
+                <a href="https://github.com/sumit-garg1/Weather-App" class="btn-source" style="margin-right: 20px;"><button>Source Code</button></a>
+                <!-- <a href="" class="btn-live"><button>Live</button></a> -->
             </div>
         </div>
-        <div id="proj-content">
-            <h4 style="font-family:Merienda;">Title:-</h4>
-            <h5 style="font-family: righteous;">NEWS APP</h5>
-            <br>
-            <h4 style="font-family:Merienda;">Description:-</h4>
-            <ul style="font-family: righteous;">
-                <li><b>Real-time News Updates:-</b> Always up-to-date news articles covering various categories such as technology, sports, entertainment, and more.</li>
-                <li><b>Dynamic Content:-</b> The app dynamically fetches the latest news without requiring manual updates.
-                <li><b>Responsive Design:-</b> Accessible and fully functional on any device, whether desktop, tablet, or mobile.</li>
-                <li><b>Easy Navigation:-</b>Simple and intuitive user interface allowing users to browse through different news categories effortlessly.
-            </ul>
-        </div>
-    </div>
-    <div id="content" class="project project-alternate">
-        <div class="proj-img">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/static/images/weather1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/static/images/weather2.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <a href=""><button>View Live</button></a><a href=""><button>source code</button></a>
+
+        <!-- News App -->
+        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="3000">
+            <div class="proj-name">
+                <h3>News App</h3>
+            </div>
+            <div class="proj-img">
+                <img src="{% static 'images/news1.png' %}" class="d-block w-100" alt="News App">
+            </div>
+            <div class="proj-buttons">
+                <a href="https://github.com/sumit-garg1/News-App" class="btn-source" style="margin-right: 20px;"><button>Source Code</button></a>
+                <a href="https://sumitgarg1.pythonanywhere.com/" class="btn-live"><button>Live</button></a>
             </div>
         </div>
-        <div id="proj-content">
-            <h4 style="font-family:Merienda;">Title:-</h4>
-            <h5 style="font-family: righteous;">WEATHER APP</h5>
-            <br>
-            <h4 style="font-family:Merienda;">Description:-</h4>
-            <ul style="font-family: righteous;">
-                <li><b>Real-time Weather Data:-</b> Fetches and displays up-to-date weather information such as temperature, humidity, wind speed, and weather conditions.</li>
-                <li><b>Location Flexibility:-</b> Users can enter any city or geographic location to get the current weather details for that area.</li>
-                <li><b>User-friendly Interface:-</b> Simple and intuitive command-line interface, making it easy to use for anyone.</li>
-                <li><b>API Integration:-</b> Utilizes a reliable weather API to ensure accurate and timely weather updates.</li>
-            </ul>
+
+        <!-- Flipkart Clone -->
+        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="3000">
+            <div class="proj-name">
+                <h3>Flipkart Clone</h3>
+            </div>
+            <div class="proj-img">
+                <img src="{% static 'images/flip.1.png' %}" class="d-block w-100" alt="Flipkart Clone">
+            </div>
+            <div class="proj-buttons">
+                <a href="https://github.com/sumit-garg1/flipkart-clone" class="btn-source"><button>Source Code</button></a>
+            </div>
+        </div>
+
+        <!-- Notes App -->
+        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="3000">
+            <div class="proj-name">
+                <h3>Notes App</h3>
+            </div>
+            <div class="proj-img">
+                <img src="{% static 'images/timetable.webp' %}" class="d-block w-100" alt="Notes App">
+            </div>
+            <div class="proj-buttons">
+                <a href="https://github.com/sumit-garg1/Time-Table-Manager" class="btn-source"><button>Source Code</button></a>
+            </div>
         </div>
     </div>
 </section>
@@ -134,3 +106,4 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 {% endblock content %}
+

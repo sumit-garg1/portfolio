@@ -1,0 +1,145 @@
+/* General Styles */
+.container {
+    height: 540px;
+    width: 652px;
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+#heading, h5 {
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+
+.button {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: "righteous";
+    background-color: #fff;
+    color: #999;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border-color: #ff69b4; /* Adjust this color to match your design */
+}
+
+.button.active {
+    border-color: #ff69b4; /* Adjust this color to match your design */
+    color: #ff69b4;       /* Adjust this color to match your design */
+}
+
+#username, #email, #message, #phoneno {
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #6a6a6a;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Entername, #Enteremail, #Enterphoneno {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    width: 95%;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+#Entername:focus, #Enteremail:focus, #Entermessage:focus, #Enterphoneno:focus {
+    border-color: blue; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#Entermessage {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    width: 95%;
+    outline: none;
+    height: 70px;
+}
+
+.button2 {
+    margin-top: 9px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: "righteous";
+    color: white;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    box-shadow: 0 5px 15px rgba(212, 4, 101, 0.801);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button2:hover {
+    background: linear-gradient(45deg, #ff1493, #ff69b4);
+    box-shadow: 0 8px 20px rgba(153, 4, 212, 0.801);
+    transform: translateY(-2px);
+}
+
+.button2:active {
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    box-shadow: 0 5px 15px rgba(148, 238, 4, 0.3);
+    transform: translateY(0);
+}
+
+/* Messages Styles */
+.messages {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 15px auto;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    #heading, h5 {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    #username, #email, #message, #phoneno {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    #Entername, #Enteremail, #Enterphoneno, #Entermessage {
+        width: calc(100% - 20px); /* Adjust width for better fit */
+    }
+
+    .button2 {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .alert {
+        font-size: 14px;
+    }
+}

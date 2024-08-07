@@ -23,6 +23,7 @@ body {
     height: 68px;
     padding: 20px;
     position: relative;
+    z-index: 999; /* Ensure the nav is above other content */
 }
 
 #name {
@@ -59,7 +60,8 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
     #nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         height: auto;
         padding: 10px;
     }
@@ -68,22 +70,25 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 68px;
-        right: 20px;
+        top: 45px; /* Align with the bottom of the nav bar */
+        right: 0; /* Align with the right edge of the viewport */
         background: rgba(10, 25, 47, 0.85);
-        padding: 10px;
+        padding: 20px; /* Increased padding for better spacing */
         border-radius: 5px;
-        width: 200px;
-        z-index: 1000;
+        width: 380px;
+        z-index: 1000; /* Ensure it is above other content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
     }
 
     #nav-items.show {
         display: flex;
+        flex-direction: column;
+        align-items: center; /* Align menu items to the right */
     }
 
     #nav-items a {
         margin: 10px 0;
-        text-align: center;
+        text-align: right; /* Align text to the right */
     }
 
     .toggle-button {
@@ -92,6 +97,10 @@ body {
         font-size: 1.5em;
         color: white;
         padding: 5px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1001; /* Ensure it is above the nav items */
     }
 
     .toggle-button:after {
