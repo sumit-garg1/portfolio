@@ -49,7 +49,7 @@
 
 .proj-img {
     height: 200px;
-    width: 100%;
+    width: 414px;
     border-radius: 5px;
     overflow: hidden; /* Ensures the image stays within the bounds */
 }
