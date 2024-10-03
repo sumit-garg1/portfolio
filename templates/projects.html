@@ -1,109 +1,175 @@
-{% extends "base.html" %}
-{% load static %}
-{% block head %}
+{% extends "base.html" %} {% load static %} {% block head %}
 <head>
-    <link rel="stylesheet" href="{% static 'project.css' %}">
+  <link rel="stylesheet" href="{% static 'project.css' %}" />
 </head>
-{% endblock head %}
+{% endblock head %} {% block content %}
 
-{% block content %}
-
-<div id="project"data-aos="fade-down">
-    <div id="project-sec">
-        <h4>PROJECTS</h4>
-        <div class="line"></div>
-    </div>
+<div id="project" data-aos="fade-down">
+  <div id="project-sec">
+    <h4>PROJECTS</h4>
+    <div class="line"></div>
+  </div>
 </div>
 
 <section class="projects-section">
-    <div class="projects-container">
-        <!-- Chat App -->
-        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="2000">
-            <div class="proj-name">
-                <h3>Chat App</h3>
-            </div>
-            <div class="proj-img">
-                <img src="{% static 'images/chat1.png' %}" class="d-block w-100" alt="Chat App">
-            </div>
-            <div class="proj-buttons">
-                <a href="https://github.com/sumit-garg1/Chat-App" class="btn-source"><button>Source Code</button></a>
-            </div>
-        </div>
-
-        <!-- Portfolio Website -->
-        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="2000">
-            <div class="proj-name">
-                <h3>Portfolio Website</h3>
-            </div>
-            <div class="proj-img">
-                <img src="{% static 'images/port1.png' %}" class="d-block w-100" alt="Portfolio Website">
-            </div>
-            <div class="proj-buttons">
-                <a href="" class="btn-source" style="margin-right: 20px;"><button>Source Code</button></a>
-                <a href="" class="btn-live"><button>Live</button></a>
-            </div>
-        </div>
-
-        <!-- Weather App -->
-        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="2000">
-            <div class="proj-name">
-                <h3>Weather App</h3>
-            </div>
-            <div class="proj-img">
-                <img src="{% static 'images/weather3.png' %}" class="d-block w-100" alt="Weather App">
-            </div>
-            <div class="proj-buttons">
-                <a href="https://github.com/sumit-garg1/Weather-App" class="btn-source" style="margin-right: 20px;"><button>Source Code</button></a>
-                <a href="https://weather-app-oz2g.onrender.com" class="btn-live"><button>Live</button></a>
-            </div>
-        </div>
-
-        <!-- News App -->
-        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="3000">
-            <div class="proj-name">
-                <h3>News App</h3>
-            </div>
-            <div class="proj-img">
-                <img src="{% static 'images/news1.png' %}" class="d-block w-100" alt="News App">
-            </div>
-            <div class="proj-buttons">
-                <a href="https://github.com/sumit-garg1/News-App" class="btn-source" style="margin-right: 20px;"><button>Source Code</button></a>
-                <a href="https://sumitgarg1.pythonanywhere.com/" class="btn-live"><button>Live</button></a>
-            </div>
-        </div>
-
-        <!-- Flipkart Clone -->
-        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="3000">
-            <div class="proj-name">
-                <h3>Flipkart Clone</h3>
-            </div>
-            <div class="proj-img">
-                <img src="{% static 'images/flip.1.png' %}" class="d-block w-100" alt="Flipkart Clone">
-            </div>
-            <div class="proj-buttons">
-                <a href="https://github.com/sumit-garg1/flipkart-clone" class="btn-source"><button>Source Code</button></a>
-            </div>
-        </div>
-
-        <!-- Notes App -->
-        <div class="project-item"data-aos="zoom-in-down"data-aos-duration="3000">
-            <div class="proj-name">
-                <h3>Time-Table Manager</h3>
-            </div>
-            <div class="proj-img">
-                <img src="{% static 'images/timetable.webp' %}" class="d-block w-100" alt="Notes App">
-            </div>
-            <div class="proj-buttons">
-                <a href="https://github.com/sumit-garg1/Time-Table-Manager" class="btn-source"><button>Source Code</button></a>
-            </div>
-        </div>
+  <div class="projects-container">
+    <!-- Chat App -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="2000">
+      <div class="proj-name">
+        <h3>Chat App</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/chat1.png' %}"
+          class="d-block w-100"
+          alt="Chat App"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a href="https://github.com/sumit-garg1/Chat-App" class="btn-source"
+          ><button>Source Code</button></a
+        >
+      </div>
     </div>
+    <!-- Jarvis AI Assistant -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="2000">
+      <div class="proj-name">
+        <h3>Jarvis AI Assistant</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/jarvis.png' %}"
+          class="d-block w-100"
+          alt="Chat App"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a href="https://github.com/sumit-garg1/Jarvis-clone" class="btn-source"
+          ><button>Source Code</button></a
+        >
+      </div>
+    </div>
+    <!-- Portfolio Website -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="2000">
+      <div class="proj-name">
+        <h3>Portfolio Website</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/port1.png' %}"
+          class="d-block w-100"
+          alt="Portfolio Website"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a href="" class="btn-source" style="margin-right: 20px"
+          ><button>Source Code</button></a
+        >
+        <a href="" class="btn-live"><button>Live</button></a>
+      </div>
+    </div>
+
+    <!-- Weather App -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="2000">
+      <div class="proj-name">
+        <h3>Weather App</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/weather3.png' %}"
+          class="d-block w-100"
+          alt="Weather App"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a
+          href="https://github.com/sumit-garg1/Weather-App"
+          class="btn-source"
+          style="margin-right: 20px"
+          ><button>Source Code</button></a
+        >
+        <a href="https://weather-app-oz2g.onrender.com" class="btn-live"
+          ><button>Live</button></a
+        >
+      </div>
+    </div>
+
+    <!-- News App -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="3000">
+      <div class="proj-name">
+        <h3>News App</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/news1.png' %}"
+          class="d-block w-100"
+          alt="News App"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a
+          href="https://github.com/sumit-garg1/News-App"
+          class="btn-source"
+          style="margin-right: 20px"
+          ><button>Source Code</button></a
+        >
+        <a href="https://sumitgarg1.pythonanywhere.com/" class="btn-live"
+          ><button>Live</button></a
+        >
+      </div>
+    </div>
+
+    <!-- Flipkart Clone -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="3000">
+      <div class="proj-name">
+        <h3>Flipkart Clone</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/flip.1.png' %}"
+          class="d-block w-100"
+          alt="Flipkart Clone"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a
+          href="https://github.com/sumit-garg1/flipkart-clone"
+          class="btn-source"
+          ><button>Source Code</button></a
+        >
+      </div>
+    </div>
+
+    <!-- Notes App -->
+    <div class="project-item" data-aos="zoom-in-down" data-aos-duration="3000">
+      <div class="proj-name">
+        <h3>Time-Table Manager</h3>
+      </div>
+      <div class="proj-img">
+        <img
+          src="{% static 'images/timetable.webp' %}"
+          class="d-block w-100"
+          alt="Notes App"
+        />
+      </div>
+      <div class="proj-buttons">
+        <a
+          href="https://github.com/sumit-garg1/Time-Table-Manager"
+          class="btn-source"
+          ><button>Source Code</button></a
+        >
+      </div>
+    </div>
+  </div>
 </section>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+  AOS.init();
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
 {% endblock content %}
-
