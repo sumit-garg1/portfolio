@@ -1,35 +1,41 @@
-{% extends "base.html" %}
-{% load static %} 
-{% block head %}  
+{% extends "base.html" %} {% load static %} {% block head %}
 <head>
-    <link rel="stylesheet" href={% static "about.css" %}>
-    
+  <link rel="stylesheet" href={% static "about.css" %}>
 </head>
-{% endblock head %}
-{% block content %}
+{% endblock head %} {% block content %}
 
-<div id="about"data-aos="zoom-out-up">
-    <div id="about-sec">
-        <h2>ABOUT</h2>
-        <div class="line"></div>
-    </div>
+<div id="about" data-aos="zoom-out-up">
+  <div id="about-sec">
+    <h2>ABOUT</h2>
+    <div class="line"></div>
+  </div>
 </div>
 <div id="content">
-    <div id="image-sec"data-aos="zoom-in-up"data-aos-delay="200">
-        <img src="/static/images/image2.jpg" alt="image">
-    </div> 
-        <div id="text-sec"data-aos="zoom-in-left">
-            <h3>👋 Hey there</h3>
-            <br>
-            <p>I'm Sumit Garg, a passionate and skilled developer with a strong foundation in various programming languages and frameworks. My expertise spans HTML, CSS, C, C++, Python, Django, Flask, and FastAPI. With a knack for backend development and a keen eye for frontend design, I also excel in SQL and web scraping. I am committed to creating efficient, high-quality web applications. With a knack for problem-solving, I thrive on creating elegant code that makes an impact.</p>
-        </div>
+  <div id="image-sec" data-aos="zoom-in-up" data-aos-delay="200">
+    <img src="/static/images/image2.jpg" alt="image" />
+  </div>
+  <div id="text-sec" data-aos="zoom-in-left">
+    <h3>👋 Hey there</h3>
+    <br />
+    <p>
+      I'm Sumit Garg, a passionate and skilled developer with a strong
+      foundation in various programming languages and frameworks. My expertise
+      spans HTML, CSS, C, C++, Python, Django, Flask, and FastAPI. With a knack
+      for backend development and a keen eye for frontend design, I also excel
+      in SQL and web scraping. I am committed to creating efficient,
+      high-quality web applications. With a knack for problem-solving, I thrive
+      on creating elegant code that makes an impact.
+    </p>
+  </div>
 </div>
 <div id="cv">
-    <a href="{% static 'sumit.pdf' %}" download class="download-btn">Download CV</a>
+  <a href="{% static 'SumitGarg_Resume.pdf' %}" download class="download-btn"
+    >Download CV</a
+  >
 </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
-    AOS.init();
-  </script>
+  AOS.init();
+</script>
 {% endblock content %}
