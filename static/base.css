@@ -11,7 +11,7 @@
 body {
     background-color: #02001e;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -104,7 +104,7 @@ body {
     }
 
     .toggle-button:after {
-        content: '\f0c9'; /* FontAwesome menu icon */
+        content: 'f0c9'; /* FontAwesome menu icon */
         font-family: 'Font Awesome 6 Free';
         font-weight: 900;
     }

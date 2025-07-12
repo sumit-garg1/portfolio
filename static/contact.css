@@ -1,145 +1,127 @@
 /* General Styles */
-.container {
-    height: 540px;
-    width: 652px;
-    border: 2px solid white;
-    margin-top: 30px;
-    border-radius: 15px;
-    background-color: white;
+#contact {
+    color: #dee2e6;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-left: 130px;
 }
 
-#heading, h5 {
-    font-size: 1.25rem;
-    margin-top: 30px;
+#contact-sec {
+    display: flex;
+    align-items: center;
 }
 
-.button {
-    font-size: 18px;
-    margin-top: 5px;
-    font-family: "righteous";
-    background-color: #fff;
-    color: #999;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover {
-    border-color: #ff69b4; /* Adjust this color to match your design */
-}
-
-.button.active {
-    border-color: #ff69b4; /* Adjust this color to match your design */
-    color: #ff69b4;       /* Adjust this color to match your design */
-}
-
-#username, #email, #message, #phoneno {
-    margin-top: 15px;
+.line {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: #dee2e6;
     margin-left: 10px;
-    color: #6a6a6a;
-    font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.container-box{
+    display: flex;
+    justify-self: center;
+    margin-top: 3%;
+    width: 420px;
+    height: 250px;  
+    border-radius: 10px;
+    background-color: rgba(4, 20, 43, 0.85);
+    transform: scale(1.1);
+    /* box-shadow: rgba(106, 5, 146, 0.726) 0px 13px 27px -5px, rgba(228, 49, 49, 0.856) 0px 8px 16px -8px; */
+box-shadow: 0 0 30px #640a76;
 
-#Entername, #Enteremail, #Enterphoneno {
+}
+.contact-name{
+    font-size: 30px;
+    color: #64ffda;
+    margin-left: 20px;
+    font-family: "Inter, sans-serif";
+    /* font-family: ""; */
+    
+}
+#name1{
+    font-family: "Inter, sans-serif";
+    /* font-family: ; */
+    display: flex;
+    color: aqua;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#name2{
+    font-size: 25px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #dee2e6;   
+}
+#Email1 a{
+    font-size: 25px;
     margin-top: 5px;
-    border-radius: 5px;
-    border: 0.5px solid black;
-    width: 95%;
-    height: 40px;
-    outline: none;
-    cursor: pointer;
+    margin-left: 10px; 
+    justify-content: center;
+    align-items: center;
+    color: #dee2e6;
+    text-decoration: none;
+        
 }
 
-#Entername:focus, #Enteremail:focus, #Entermessage:focus, #Enterphoneno:focus {
-    border-color: blue; /* Change border color on focus */
-    outline: none; /* Remove default outline */
-}
-
-#Entermessage {
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 0.5px solid black;
-    width: 95%;
-    outline: none;
-    height: 70px;
-}
-
-.button2 {
-    margin-top: 9px;
+#Phone1 a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #dee2e6;
     margin-left: 10px;
-    border-radius: 5px;
-    padding: 10px 30px;
-    font-size: 18px;
-    font-family: "righteous";
-    color: white;
-    background: linear-gradient(45deg, #ff69b4, #ff1493);
-    box-shadow: 0 5px 15px rgba(212, 4, 101, 0.801);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
-
-.button2:hover {
-    background: linear-gradient(45deg, #ff1493, #ff69b4);
-    box-shadow: 0 8px 20px rgba(153, 4, 212, 0.801);
-    transform: translateY(-2px);
+#Location {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #dee2e6;
+    margin-top: 1px; 
 }
-
-.button2:active {
-    background: linear-gradient(45deg, #ff69b4, #ff1493);
-    box-shadow: 0 5px 15px rgba(148, 238, 4, 0.3);
-    transform: translateY(0);
+.social-line {
+    text-align: center;
+    margin-top: 40px;
+    color: #64ffda;
+    font-size: 23px;
+    font-family: "Inter, sans-serif";
 }
-
-/* Messages Styles */
-.messages {
-    margin-bottom: 20px;
+#social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 30px; */
 }
-
-.alert {
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid transparent;
-    border-radius: 5px;
+.social {
+  font-size: 55px; 
+  color: white;
 }
-
-.alert-success {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
+#name2:hover {
+    color: #16ff00;
 }
-
+#Email1 a:hover {
+    color: #16ff00;
+}
+#Phone1 a:hover {
+    color: #16ff00;
+}
+#Location:hover {
+    color: #16ff00;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 15px auto;
+    .container-box {
+        width: 100%;
+        margin-top: 45px;
+        margin-left: 25px;
+        /* margin: 15px auto; */
         height: auto; /* Allow height to adjust based on content */
     }
 
-    #heading, h5 {
-        font-size: 1rem;
+    #contact-name{
+        margin: 0;
     }
-
-    .button {
-        font-size: 16px;
-    }
-
-    #username, #email, #message, #phoneno {
-        font-size: 14px;
+    #name2, #Email1, #Phone1, #Location {
+        font-size: 25px;
         margin-left: 5px;
-    }
-
-    #Entername, #Enteremail, #Enterphoneno, #Entermessage {
-        width: calc(100% - 20px); /* Adjust width for better fit */
-    }
-
-    .button2 {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
-
-    .alert {
-        font-size: 14px;
     }
 }
