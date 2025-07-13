@@ -116,4 +116,27 @@
         flex: 1 1 100%; /* Ensure each item takes full width on mobile */
         max-width: 100%; /* Prevents items from overflowing */
     }
+    #project {
+        margin: 0 auto;
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #project-sec {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+
+    .line {
+        width: 100px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: #dee2e6;
+    }
+
 }
+

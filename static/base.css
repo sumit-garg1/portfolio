@@ -104,7 +104,7 @@ body {
     }
 
     .toggle-button:after {
-        content: 'f0c9'; /* FontAwesome menu icon */
+        /* content: 'f0c9'; */
         font-family: 'Font Awesome 6 Free';
         font-weight: 900;
     }

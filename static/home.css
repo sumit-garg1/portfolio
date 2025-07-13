@@ -91,6 +91,9 @@ body{
 
 /* Mobile styles */
 @media (max-width: 768px) {
+  body{
+    overflow-y: auto;
+  }
   #image, img {
     margin-top: 4rem;
     height: 200px;
@@ -101,12 +104,12 @@ body{
     text-align: center; /* Increased top margin for mobile */
   }
   #intro {
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 1rem;
     /* margin-bottom: 15px; Increased bottom margin for mobile */
   }
   #intro2 {
-    font-size: 50px;
+    font-size: 70px;
     /* margin-bottom: 20px; Increased bottom margin for mobile */
   }
   .container {
@@ -114,19 +117,19 @@ body{
     text-align: center; /* Adjust padding for mobile */
   }
   .container .text {
-    /* margin-top: 1rem; */
+    margin-top: 2rem;
     /* width: 50px; */
-    font-size: 20px;
+    font-size: 30px;
     /* margin-bottom: 15px; Increased bottom margin for mobile */
   }
   .container .text.first-text {
     /* width: 20px; */
     /* padding-right: 2rem; */
     margin-top: 1rem;
-    margin-right: 0;
+    margin-right: 5px;
   }
   .social {
     margin-top: 1.5rem;
-    font-size: 40px;
+    font-size: 75px;
   }
 }

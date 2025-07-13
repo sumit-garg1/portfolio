@@ -137,6 +137,7 @@
     }
 
     body {
+        overflow-x: auto;
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
